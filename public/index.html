@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://use.fontawesome.com/e8b509ba6e.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>HeyoChat login</title>
+  </head>
+  <body>
+    <div class="login-wrapper">
+      <h1 class="header">HeyoChat</h1>
+      <div class="sign-up-form">
+        <form action="/chatroom" method="GET">
+          <div class="formitemsection">
+            <h3>Login</h3>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Username"
+              required
+            />
+            <div class="select">
+              <select name="room" id="chatroom">
+                <option value="chelsea">chelsea</option>
+                <option value="arsenal">Arsenal</option>
+                <option value="manu">Man-United</option>
+                <option value="manc">Man-City</option>
+                <option value="liverpool">Liverpool</option>
+                <option value="spurs">totenham</option>
+              </select>
+            </div>
+            <button type="submit" class="submitbtn">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

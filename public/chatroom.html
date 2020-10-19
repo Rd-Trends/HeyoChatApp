@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css" /> -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://use.fontawesome.com/e8b509ba6e.js"></script>
+    <title>HeyoChat ChatRoom</title>
+  </head>
+  <body>
+    <div class="chat-section">
+      <div class="chat-container">
+        <div class="chat-sidebar">
+          <button class="close-sidebarbtn">
+            <i class="fa fa-window-close fa-2x"></i>
+          </button>
+          <div class="user-section">
+            <h3>Room Name:</h3>
+            <h2 class="roomname"></h2>
+          </div>
+          <h3>Users:</h3>
+          <ul id="users"></ul>
+        </div>
+        <div class="chat-box">
+          <header>
+            <button class="navbtn">
+              <i class="fa fa-bars fa-2x"></i>
+            </button>
+            <h1>HeyoChat</h1>
+            <a href="/"><span class="fas fa-arrow-circle-left fa-2x"></span></a>
+          </header>
+          <div class="chat-messages"></div>
+          <div class="chat-box-form">
+            <form id="chat-message-input">
+              <input id="msg" type="text" placeholder="Type Message...." />
+              <button type="submit" id="send-btn">
+                <i class="fas fa-paper-plane fa-2x" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
